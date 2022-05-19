@@ -182,6 +182,7 @@ npm install firebase
 ```
 
 Then, initialize Firebase and begin using the SDKs for the products you’d like to use.
+Add this in `firebase.init.js` file in to the src folder.
 
 ```js
 // Import the functions you need from the SDKs you need
@@ -218,6 +219,24 @@ REACT_APP_STORAGE_BUCKET=XXXXXXXXXXXXXXXXXX
 REACT_APP_MESSAGING_SENDER_ID=XXXXXXXXXXXXX
 REACT_APP_APP_ID=XXXXXXXXXXXXXXXXXXXXXXX
 ```
+
+## React Firebase Hooks. [npm](https://www.npmjs.com/package/react-firebase-hooks)
+
+### `Installation`
+
+This is for use `Firebase Authentication` in the project. This make Authentication more simpler For the `Installation` run this commend in your project CMD.
+
+```bash
+# with npm
+npm install --save react-firebase-hooks
+
+# with yarn
+yarn add react-firebase-hooks
+```
+
+### `Documentation`
+
+-[Authentication Hooks](https://github.com/CSFrequency/react-firebase-hooks/tree/master/auth)
 
 ## [React Router](https://reactrouter.com/)
 
@@ -275,24 +294,6 @@ function App() {
   );
 }
 ```
-
-## React Firebase Hooks. [npm](https://www.npmjs.com/package/react-firebase-hooks)
-
-### `Installation`
-
-This is for use `Firebase Authentication` in the project. This make Authentication more simpler For the `Installation` run this commend in your project CMD.
-
-```bash
-# with npm
-npm install --save react-firebase-hooks
-
-# with yarn
-yarn add react-firebase-hooks
-```
-
-### `Documentation`
-
--[Authentication Hooks](https://github.com/CSFrequency/react-firebase-hooks/tree/master/auth)
 
 ## [React Bootstrap](https://react-bootstrap.github.io/)
 
