@@ -103,7 +103,7 @@ module.exports = {
 
 ### `How to add a new custom theme?`
 
-You can add a new theme from `tailwind.config.js` file. In below example, I added a new theme called `mytheme` and I'm also including `dark` and `cupcake` themes.
+You can add a new theme from `tailwind.config.js` file. In the below example, I added a new theme called `mytheme` and I'm also including `dark` and `cupcake` themes.
 
 - The first theme (`mytheme`) will be the default theme.
 
@@ -137,7 +137,7 @@ module.exports = {
 
 ### daisyUI Theme Generator
 
-You can add your custom themes to `tailwind.config.js` file in `daisyui > themes` array. In this page, you can pick required color values and see how the components will look like with them.
+You can add your custom themes to `tailwind.config.js` file in `daisyui > themes` array. On this page, you can pick the required color values and see what the components will look like with them.
 
 - Inside `tailwind.config.js`
 
@@ -172,71 +172,6 @@ module.exports = {
   //...
 };
 ```
-
-## Firebase Authentication
-
-For make a firebase authentication need to run this commend at cmd.
-
-```bash
-npm install firebase
-```
-
-Then, initialize Firebase and begin using the SDKs for the products you’d like to use.
-Add this in `firebase.init.js` file in to the src folder.
-
-```js
-// Import the functions you need from the SDKs you need
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID,
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-const auth = getAuth(app);
-
-export default auth;
-```
-
-for squire the app api, you need to make `.env.local` file and past the api key
-
-```dosini
-REACT_APP_API_KEY=XXXXXXXXXXXXXXXX
-REACT_APP_AUTH_DOMAIN=XXXXXXXXXXXXXXXX
-REACT_APP_PROJECT_ID=XXXXXXXXXXXXXXXXXXXXXX
-REACT_APP_STORAGE_BUCKET=XXXXXXXXXXXXXXXXXX
-REACT_APP_MESSAGING_SENDER_ID=XXXXXXXXXXXXX
-REACT_APP_APP_ID=XXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## React Firebase Hooks. [npm](https://www.npmjs.com/package/react-firebase-hooks)
-
-### `Installation`
-
-This is for use `Firebase Authentication` in the project. This make Authentication more simpler For the `Installation` run this commend in your project CMD.
-
-```bash
-# with npm
-npm install --save react-firebase-hooks
-
-# with yarn
-yarn add react-firebase-hooks
-```
-
-### `Documentation`
-
--[Authentication Hooks](https://github.com/CSFrequency/react-firebase-hooks/tree/master/auth)
 
 ## [React Router](https://reactrouter.com/)
 
@@ -294,6 +229,71 @@ function App() {
   );
 }
 ```
+
+## Firebase Authentication
+
+To make a firebase authentication need to run this command at cmd.
+
+```bash
+npm install firebase
+```
+
+Then, initialize Firebase and begin using the SDKs for the products you’d like to use.
+Add this in `firebase.init.js` file in the src folder.
+
+```js
+// Import the functions you need from the SDKs you need
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
+export default auth;
+```
+
+To squire the app api, you need to make `.env.local` file and add the api key.
+
+```dosini
+REACT_APP_API_KEY=XXXXXXXXXXXXXXXX
+REACT_APP_AUTH_DOMAIN=XXXXXXXXXXXXXXXX
+REACT_APP_PROJECT_ID=XXXXXXXXXXXXXXXXXXXXXX
+REACT_APP_STORAGE_BUCKET=XXXXXXXXXXXXXXXXXX
+REACT_APP_MESSAGING_SENDER_ID=XXXXXXXXXXXXX
+REACT_APP_APP_ID=XXXXXXXXXXXXXXXXXXXXXXX
+```
+
+## React Firebase Hooks. [npm](https://www.npmjs.com/package/react-firebase-hooks)
+
+### `Installation`
+
+This is for use `Firebase Authentication` in the project. This make Authentication more simpler For the `Installation` run this commend in your project CMD.
+
+```bash
+# with npm
+npm install --save react-firebase-hooks
+
+# with yarn
+yarn add react-firebase-hooks
+```
+
+### `Documentation`
+
+-[Authentication Hooks](https://github.com/CSFrequency/react-firebase-hooks/tree/master/auth)
 
 ## [React Bootstrap](https://react-bootstrap.github.io/)
 
